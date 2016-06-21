@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<script src="node_modules/babel-core/browser.min.js"></script>
+  </head>
+  <body>
+	  Hello World! 
+	  <div id="content"></div>
+	  <script type="text/babel">
+	  	class myClass {
+	  		hello() {
+	  			return "I am ES6";
+	  		}
+	  	}
+
+	  	var obj = new myClass();
+	  	var temp = obj.hello();	
+	  	document.getElementById("content").innerText = obj.hello();
+	  </script>
+  </body>
+ </html>
